@@ -12,4 +12,4 @@ People can learn more about using jQuery by looking through websites such as [jQ
 
 
 ## The Site is live!
-[Click here to see the page!](https://marvie-c-solis-friend-finder.herokuapp.com/)
+[Click here to see the page on Heroku!](https://marvie-c-solis-friend-finder.herokuapp.com/)
