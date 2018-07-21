@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Friend Finder</title>
+
+    <link rel="shortcut icon" type="image/png" href="./assets/images/MSfavicon.png" />
+
+
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+
+    <!--Personal CSS-->
+    <link rel="stylesheet" href="assets/css/style-survey.css">
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid" id="wrapper">
+
+        <div class="container" id="homeContent">
+            <!--Banner Logo-->
+            <div class="row justify-content-center">
+                <div class="col-sm-auto">
+                    <img id="bannerLogo" align="center" src="./assets/images/FriendFinderLogo.png">
+                </div>
+            </div>
+            <!--Divider-->
+            <div class="row justify-content-center">
+                <div class="col-sm-8">
+                    <h3 align="center">
+                        <hr>
+                    </h3>
+                </div>
+            </div>
+            <!--About you form-->
+            <div class="row justify-content-center">
+                <div class="col-sm-8">
+                    <h3 align="center">
+                        <h3 id="formHeader">Enter some information about yourself</h3>
+                    </h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-8">
+                    <form id="aboutYouForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="name" class="form-control" id="userName" aria-describedby="name" placeholder="Enter full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="image">Image Link</label>
+                            <input type="imageLink" class="form-control" id="userImage" placeholder="Enter image link">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--Divider-->
+            <div class="row justify-content-center">
+                <div class="col-sm-8">
+                    <h3 align="center">
+                        <hr>
+                    </h3>
+                </div>
+            </div>
+            <!--Survey-->
+            <div class="row justify-content-center">
+                <div class="col-sm-8">
+                    <h3 align="center">
+                        <h3 id="formHeader">Survey</h3>
+                        <h5 id="extraInfo">(1 being least likely, 5 being most likely)</h5>
+                    </h3>
+                </div>
+                <div class="col-sm-8">
+                    <form>
+                        <!--Question 1-->
+                        <div class="form-group row">
+                            <label for="staticQuestion" class="col-sm-2 col-form-label">Q1:</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" class="question" id="question1" value="You would rather play sports than watch them.">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputRating" class="col-sm-2 col-form-label">Rating</label>
+                            <div class="col-sm-3">
+                                <select id="q1" class="form-control">
+                                    <option selected disabled>Choose...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Question 2-->
+                        <div class="form-group row">
+                            <label for="staticQuestion" class="col-sm-2 col-form-label">Q2:</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" class="question" id="question2" value="You would rather go out to eat than stay at home and cook.">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputRating" class="col-sm-2 col-form-label">Rating</label>
+                            <div class="col-sm-3">
+                                <select id="q2" class="form-control">
+                                    <option selected disabled>Choose...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Question 3-->
+                        <div class="form-group row">
+                            <label for="staticQuestion" class="col-sm-2 col-form-label">Q3:</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" class="question" id="question3" value="When it comes to big groups, you tend to stay quiet and mainly listen.">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputRating" class="col-sm-2 col-form-label">Rating</label>
+                            <div class="col-sm-3">
+                                <select id="q3" class="form-control">
+                                    <option selected disabled>Choose...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Question 4-->
+                        <div class="form-group row">
+                            <label for="staticQuestion" class="col-sm-2 col-form-label">Q4:</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" class="question" id="question4" value="You crave adventure and are not afraid to travel to the unknown.">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputRating" class="col-sm-2 col-form-label">Rating</label>
+                            <div class="col-sm-3">
+                                <select id="q4" class="form-control">
+                                    <option selected disabled>Choose...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Question 5-->
+                        <div class="form-group row">
+                            <label for="staticQuestion" class="col-sm-2 col-form-label">Q5:</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" class="question" id="question5" value="You would rather play Fortnite than PUBG.">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputRating" class="col-sm-2 col-form-label">Rating</label>
+                            <div class="col-sm-3">
+                                <select id="q5" class="form-control">
+                                    <option selected disabled>Choose...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Question 6-->
+                        <div class="form-group row">
+                            <label for="staticQuestion" class="col-sm-2 col-form-label">Q6:</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" class="question" id="question6" value="You are constantly checking social media throughout the day.">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputRating" class="col-sm-2 col-form-label">Rating</label>
+                            <div class="col-sm-3">
+                                <select id="q6" class="form-control">
+                                    <option selected disabled>Choose...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Question 7-->
+                        <div class="form-group row">
+                            <label for="staticQuestion" class="col-sm-2 col-form-label">Q7:</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" class="question" id="question7" value="You would rather own a hybrid than a gas powered car.">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputRating" class="col-sm-2 col-form-label">Rating</label>
+                            <div class="col-sm-3">
+                                <select id="q7" class="form-control">
+                                    <option selected disabled>Choose...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Question 8-->
+                        <div class="form-group row">
+                            <label for="staticQuestion" class="col-sm-2 col-form-label">Q8:</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" class="question" id="question8" value="How would you rate your intelligence level?">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputRating" class="col-sm-2 col-form-label">Rating</label>
+                            <div class="col-sm-3">
+                                <select id="q8" class="form-control">
+                                    <option selected disabled>Choose...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Question 9-->
+                        <div class="form-group row">
+                            <label for="staticQuestion" class="col-sm-2 col-form-label">Q9:</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" class="question" id="question9" value="You care a lot about how you dress when you go out.">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputRating" class="col-sm-2 col-form-label">Rating</label>
+                            <div class="col-sm-3">
+                                <select id="q9" class="form-control">
+                                    <option selected disabled>Choose...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Question 10-->
+                        <div class="form-group row">
+                            <label for="staticQuestion" class="col-sm-2 col-form-label">Q10:</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" class="question" id="question10" value="You would rather sleep late than sleep early.">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputRating" class="col-sm-2 col-form-label">Rating</label>
+                            <div class="col-sm-3">
+                                <select id="q10" class="form-control">
+                                    <option selected disabled>Choose...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--Button-->
+            <div class="row justify-content-center">
+                <div class="col-sm-auto">
+                    <button align="center" id="submitSurvey" data-toggle="modal" data-target="#bestFriendModal">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-auto">
+                    <a href="/api/friends"></a><p id="copyright">List of friends</p></a>
+                    <p id="copyright">&copy; Copyright Marvie Solis 2018</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="bestFriendModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="modalBody">
+                <div class="modal-header">
+                    <h5 id="modalHeader" class="modal-title">Your new best friend!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-auto">
+                            <h6 id="friendName">Mr. Bean</h6>
+                            <img id="friendImage" src="./assets/images/placeholder.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Bootstrap Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+
+
+
+    <!--On page Javascript-->
+    <script type="text/javascript">
+
+
+        $("#submitSurvey").on("click", function (event) {
+            var userInput = {
+                name: $("#userName").val().trim(),
+                image: $("#userImage").val().trim(),
+                ratings: [
+                    $('#q1').val().trim(),
+                    $('#q2').val().trim(),
+                    $('#q3').val().trim(),
+                    $('#q4').val().trim(),
+                    $('#q5').val().trim(),
+                    $('#q6').val().trim(),
+                    $('#q7').val().trim(),
+                    $('#q8').val().trim(),
+                    $('#q9').val().trim(),
+                    $('#q10').val().trim()
+                ]
+            };
+
+			console.log('userInput = ' + JSON.stringify(userInput));
+
+            $.post('/api/friends', userInput).done(function (data) {
+
+                $('#friendName').html(data.resultName);
+                $("#friendImage").attr("src", data.resultImage);
+
+            });
+
+        });
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
